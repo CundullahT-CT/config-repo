@@ -9,9 +9,9 @@ spring:
       ddl-auto: create
     show-sql: true
   datasource:
-    url: jdbc:postgresql://localhost:5432/ticketing-userdb
-    username: postgres
-    password: admin
+    url: jdbc:postgresql://${USER_DB_URL}:5432/ticketing-userdb
+    username: ${USER_DB_USERNAME}
+    password: ${USER_DB_PASSWORD}
     driver-class-name: org.postgresql.Driver
     initialization-mode: always
 
@@ -24,14 +24,14 @@ keycloak:
   ssl-required: none
   resource: ticketing-app
   credentials:
-    secret: H60klvIQaHbGzOE8yDTDknMp2D1oYBof
+    secret: ${CLIENT_SECRET}
   use-resource-role-mappings: true
   bearer-only: true
 
 master:
   user:
-    username: admin
-    password: admin
+    username: ${MASTER_USER}
+    password: ${MASTER_PASSWORD}
   realm: master
   client: master-client
 
