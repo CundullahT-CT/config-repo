@@ -20,7 +20,7 @@ server:
 
 keycloak:
   realm: cydeo-dev
-  auth-server-url: http://${KEYCLOAK}:8080/auth
+  auth-server-url: http://${KEYCLOAK_URL}:8080/auth
   ssl-required: none
   resource: ticketing-app
   credentials:
@@ -39,7 +39,7 @@ eureka:
   instance:
     preferIpAddress: true
     ipAddress: ${HOST}
-    status-page-url-path: ${management.context-path}/info
+    status-page-url-path: http://${z}:8081/actuator/info
     health-check-url-path: ${management.context-path}/health
   client:
     serviceUrl:
@@ -104,3 +104,7 @@ resilience4j:
         baseConfig: default
       task-service:
         baseConfig: default
+
+openapi:
+  oAuthFlow:
+    tokenUrl: "http://18.185.103.42:8080/auth/realms/cydeo-dev/protocol/openid-connect/token"
