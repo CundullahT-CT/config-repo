@@ -39,7 +39,7 @@ eureka:
   instance:
     preferIpAddress: true
     ipAddress: ${HOST}
-    status-page-url-path: http://${z}:8081/actuator/info
+    status-page-url-path: http://${management.context-path}:8081/actuator/info
     health-check-url-path: ${management.context-path}/health
   client:
     serviceUrl:
