@@ -97,3 +97,7 @@ resilience4j:
     instances:
       task-service:
         baseConfig: default
+
+openapi:
+  oAuthFlow:
+    tokenUrl: "http://18.185.103.42:8080/auth/realms/cydeo-dev/protocol/openid-connect/token"
