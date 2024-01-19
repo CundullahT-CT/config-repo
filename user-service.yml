@@ -20,11 +20,11 @@ server:
 
 keycloak:
   realm: cydeo-dev
-  auth-server-url: http://${KEYCLOAK}:8080/auth
+  auth-server-url: http://localhost:8080/auth
   ssl-required: none
   resource: ticketing-app
   credentials:
-    secret: ${CLIENT_SECRET}
+    secret: yBoinzPIKLwo6dcsS3tvfRBmX8lZfUmn
   use-resource-role-mappings: true
   bearer-only: true
 
@@ -107,4 +107,4 @@ resilience4j:
 
 openapi:
   oAuthFlow:
-    tokenUrl: "http://18.185.103.42:8080/auth/realms/cydeo-dev/protocol/openid-connect/token"
+    tokenUrl: "http://localhost:8080/auth/realms/cydeo-dev/protocol/openid-connect/token"
