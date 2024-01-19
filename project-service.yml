@@ -20,7 +20,7 @@ server:
 
 keycloak:
   realm: cydeo-dev
-  auth-server-url: http://localhost:8080/auth
+  auth-server-url: http://${KEYCLOAK}:8080/auth
   ssl-required: none
   resource: ticketing-app
   credentials:
