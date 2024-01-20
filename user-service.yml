@@ -104,7 +104,3 @@ resilience4j:
         baseConfig: default
       task-service:
         baseConfig: default
-
-openapi:
-  oAuthFlow:
-    tokenUrl: "http://localhost:8080/auth/realms/cydeo-dev/protocol/openid-connect/token"
