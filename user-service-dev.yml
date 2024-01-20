@@ -60,8 +60,6 @@ info:
     name: ${spring.application.name}
     description: Ticketing Application User Service
     version: '@project.version@'
-    spring-cloud-version: '@spring-cloud.version@'
-    spring-boot-version: '@project.parent.version@'
 
 resilience4j:
 
