@@ -102,6 +102,3 @@ resilience4j:
         baseConfig: default
       task-service:
         baseConfig: default
-
-#swagger:
-#  serverURL: ${HOST}:${server.port}
