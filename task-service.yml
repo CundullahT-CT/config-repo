@@ -14,6 +14,11 @@ spring:
     password: ${TASK_DB_PASSWORD}
     driver-class-name: org.postgresql.Driver
     initialization-mode: always
+  sleuth:
+    sampler:
+      probability: 1
+  zipkin:
+    base-url: http://3.79.239.40:9411
 
 server:
   port: 8083

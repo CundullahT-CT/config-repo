@@ -12,6 +12,11 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: http://${KEYCLOAK}:8080/auth/realms/cydeo-dev
+  sleuth:
+    sampler:
+      probability: 1
+  zipkin:
+    base-url: http://3.79.239.40:9411
 
 server:
   port: 8762
