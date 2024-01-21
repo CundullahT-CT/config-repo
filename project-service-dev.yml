@@ -89,8 +89,8 @@ resilience4j:
   ratelimiter:
     configs:
       default:
-        timeout-duration: 5000
-        limitRefreshPeriod: 5000
+        timeout-duration: 50000
+        limitRefreshPeriod: 50000
         limitForPeriod: 1
     instances:
       task-service:
