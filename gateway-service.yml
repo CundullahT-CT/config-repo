@@ -11,12 +11,15 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://${KEYCLOAK}:8080/auth/realms/cydeo-dev
+          issuer-uri: ${keycloak.address}/auth/realms/cydeo-dev
   sleuth:
     sampler:
       probability: 1
   zipkin:
     base-url: http://${LOG_TRACE_SERVICE}:9411
+
+keycloak:
+  address: http://${KEYCLOAK}:8080
 
 server:
   port: 8762
