@@ -61,6 +61,6 @@ springdoc:
     urls[2]:
       name: Task Service API Doc
       url: /task-service/v3/api-docs
-    urls[3]:
-      name: Gateway Service API Doc
-      url: /v3/api-docs
+#    urls[3]:
+#      name: Gateway Service API Doc
+#      url: /v3/api-docs
