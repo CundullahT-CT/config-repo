@@ -120,4 +120,4 @@ feign:
         readTimeout: 160000000
 
 demo:
-  config: demo
+  config: demo2
