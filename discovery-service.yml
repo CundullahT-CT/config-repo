@@ -15,3 +15,13 @@ eureka:
       defaultZone: http://${EUREKA}:8761/eureka/
     register-with-eureka: false
     fetch-registry: false
+
+management:
+  endpoint:
+    health:
+      show-details: "ALWAYS"
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  context-path: http://${HOST}:${server.port}/actuator
