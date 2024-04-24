@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: discovery-service
   cloud:
     loadbalancer:
       ribbon:
